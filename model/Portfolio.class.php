@@ -9,20 +9,20 @@
 			parent::__construct();
 		}
 
-		function GetProdutos(){
+		function GetPortfolio(){
 			//Query para buscar os produtos de uma categoria específica
-			$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categorias c ON p.prod_categoria = c.cate_id";
+			$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categoria c ON p.port_categoria = c.id";
 
 			//$query .= " LIMIT 0,6";
 			$query .= " ORDER BY id DESC";
-			$query .= $this->PaginacaoLinks("d", $this->prefix."produtos");
+			//$query .= $this->PaginacaoLinks("d", $this->prefix."portfolio");
 			$this->ExecuteSQL($query);
 			$this->GetLista();
 		}
 
-		function GetProdutosID($id){
+		function GetPortfolioID($id){
 			//Query para buscar os produtos de uma categoria específica
-			$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categorias c ON p.prod_categoria = c.cate_id";
+			$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categoria c ON p.port_categoria = c.id";
 
 			$query .= " AND id = :id";
 			$params = array(':id'=>(int)$id);
@@ -30,21 +30,21 @@
 			$this->GetLista();
 		}
 
-		function GetProdutosCateID($id){
+		function GetPortfolioCateID($id){
 			//Query para buscar os produtos de uma categoria específica
 
 			$id = filter_var($id, FILTER_SANITIZE_NUMBER_INT);
 
 			$query = "SELECT * FROM {$this->prefix}portfolio";
 
-			$query .= " AND prod_categoria = :id";
+			$query .= " AND port_categoria = :id";
 			$query .= $this->PaginacaoLinks("id", $this->prefix."portfolio WHERE id=".(int)$id);
 			$params = array(':id'=>(int)$id);
 			$this->ExecuteSQL($query, $params);
 			$this->GetLista();
 		}
 
-        function GetProdutosNome($nome){
+        function GetPortfolioNome($nome){
         
               // monto a SQL
             $query = "SELECT * FROM {$this->prefix}portfolio";        
@@ -63,18 +63,19 @@
 			$i = 1;
 			while($lista = $this->ListarDados()):
 			$this->itens[$i] = array(
-				'port_id' => $lista['id'],
+                'port_id' => $lista['id'],
+                'port_categoria' => $lista['port_categoria'],
                 'port_nome' => $lista['port_nome'],
                 'img' => $lista['img'],
 
 				
-				'prod_img' => Rotas::ImageLink($lista['prod_img'],180,180),
-				'prod_img_g' => Rotas::ImageLink($lista['prod_img'],900,400),
-				'prod_img_p' => Rotas::ImageLink($lista['prod_img'],80,80),
+				// 'prod_img' => Rotas::ImageLink($lista['prod_img'],180,180),
+				'img' => Rotas::ImageLink($lista['prod_img'],900,400),
+				// 'prod_img_p' => Rotas::ImageLink($lista['prod_img'],80,80),
 				//'prod_img' => $lista['prod_img'],
 				
-                'prod_img_arquivo'   => Rotas::get_SiteRaiz() .'/'. Rotas::get_ImagePasta().$lista['prod_img'], 
-                'prod_img_atual'     => $lista['prod_img']
+                'port_img_arquivo'   => Rotas::get_SiteRaiz() .'/'. Rotas::get_ImagePasta().$lista['img'], 
+                'port_img_atual'     => $lista['img']
 				);
 
 			$i++;
