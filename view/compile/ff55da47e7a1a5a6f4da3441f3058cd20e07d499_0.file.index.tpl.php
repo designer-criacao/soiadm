@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-06 15:36:15
+/* Smarty version 3.1.33, created on 2019-04-06 16:31:26
   from 'C:\xampp\htdocs\soiAdmin\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca8f19f95de11_86193990',
+  'unifunc' => 'content_5ca8fe8ecd6fe9_45954523',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff55da47e7a1a5a6f4da3441f3058cd20e07d499' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\index.tpl',
-      1 => 1554575771,
+      1 => 1554576841,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca8f19f95de11_86193990 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ca8fe8ecd6fe9_45954523 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
@@ -69,16 +69,7 @@ function content_5ca8f19f95de11_86193990 (Smarty_Internal_Template $_smarty_tpl)
 											<li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA']->value;?>
 ">Empresa</a></li>
 											<li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PORTFOLIO']->value;?>
-">Portifólio</a>
-												
-													<ul>
-														<li><a href="">Sites Desenvolvidos</li>
-														<li><a href="">Vídeos de Sites</li>
-														<li><a href="">Design Desenvolvidos</li>
-													</ul>
-												
-											</li>
-											
+">Portifólio</a></li>
 											<li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
 ">Contato</a></li>
 											<!--<li><a href="#">Sign Up</a></li>-->
