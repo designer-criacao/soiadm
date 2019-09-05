@@ -32,7 +32,7 @@
 											<br>
 										</div>
 											<hr />
-										<h5>Vídeos</h5>
+										{* <h5>Vídeos</h5>
 										<div class="row uniform 50%">
 											<!--<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>-->
 											<div class="6u"><span class="video fit">
@@ -46,17 +46,20 @@
 											</video>Teveporte</span></div>
 											
 											<br>
-										</div>
+										</div> *}
 										<hr />
 										<h5>Design Gráfico</h5>
 										<div class="row uniform 50%">
-											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/img5.jpg" alt="" />Água na Boca</span></div>
+											{* <div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/img5.jpg" alt="" />Água na Boca</span></div>
 											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/ebenezer.jpg" alt="" />Avícola Ebenezer</span></div>
 											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/genesisbanner1.jpg" alt="" />Gênesis Acadêmia</span></div>
 											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/genesislogomarca.jpg" alt="" />Gênesis Acadêmia - Logo</span></div>
 											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/tm_assistencia.jpg" alt="" />TM Assitência Técnica</span></div>
-											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/bar_tabacaria.jpg" alt="" />Bar e Tabacária do Dadá</span></div>
+											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/bar_tabacaria.jpg" alt="" />Bar e Tabacária do Dadá</span></div> *}
 											
+											{foreach from=$PORT item=P}
+												<div class="6u"><span class="image fit"><img src="{$P.img}" alt="" />{$P.nome_img}</span></div>
+											{/foreach}
 										</div>
 									</div>
 									<!--

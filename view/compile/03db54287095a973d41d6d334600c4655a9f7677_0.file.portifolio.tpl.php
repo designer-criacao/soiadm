@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-26 21:37:52
+/* Smarty version 3.1.33, created on 2019-09-04 20:55:32
   from 'C:\xampp\htdocs\soiAdmin\view\portifolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c9ac5e0344586_78244359',
+  'unifunc' => 'content_5d704ef42cafa9_47245342',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '03db54287095a973d41d6d334600c4655a9f7677' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\portifolio.tpl',
-      1 => 1553647068,
+      1 => 1567641318,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c9ac5e0344586_78244359 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d704ef42cafa9_47245342 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 				<!-- Main -->
 					<article id="main">
@@ -57,39 +57,22 @@ function content_5c9ac5e0344586_78244359 (Smarty_Internal_Template $_smarty_tpl)
 											<br>
 										</div>
 											<hr />
-										<h5>Vídeos</h5>
-										<div class="row uniform 50%">
-											<!--<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>-->
-											<div class="6u"><span class="video fit">
-											<video controls class="image fit">
-												<source src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/videos/Site_Teveporte.mp4" type="video/mp4">
-											</video>Teveporte</span></div>
-
-											<div class="6u"><span class="video fit">
-											<video controls class="image fit">
-												<source src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/videos/Site_Teveporte.mp4" type="video/mp4">
-											</video>Teveporte</span></div>
-											
-											<br>
-										</div>
-										<hr />
+																				<hr />
 										<h5>Design Gráfico</h5>
 										<div class="row uniform 50%">
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/img5.jpg" alt="" />Água na Boca</span></div>
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/ebenezer.jpg" alt="" />Avícola Ebenezer</span></div>
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/genesisbanner1.jpg" alt="" />Gênesis Acadêmia</span></div>
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/genesislogomarca.jpg" alt="" />Gênesis Acadêmia - Logo</span></div>
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/tm_assistencia.jpg" alt="" />TM Assitência Técnica</span></div>
-											<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/bar_tabacaria.jpg" alt="" />Bar e Tabacária do Dadá</span></div>
-											
+																						
+											<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PORT']->value, 'P');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+?>
+												<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['img'];?>
+" alt="" /><?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
+</span></div>
+											<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 										</div>
 									</div>
 									<!--

@@ -1,15 +1,16 @@
 <?php
 
 $smarty = new Template();
+$portfolio = new Portfolio();
 
-if(isset($_POST['']) && isset($_POST[''])){
-    $port_nome = $_POST[''];
-    $port_categoria = $_POST[''];
-    $port_img = $_POST[''];
+if(isset($_POST['nome_img']) && isset($_POST['port_categoria'])){
+    $port_nome = $_POST['nome_img'];
+    $port_categoria = $_POST['port_categoria'];
+    $port_img = $_FILES['img']['name'];
 
     if(!empty($_FILES)){
         $upload = new ImageUpload();
-        if($upload->Upload(900, 'port_img')){
+        if($upload->Upload(900, 'img')){
             $port_img = $upload->retorno;
         }else {
             exit('Erro ao enviar a imagem!');
@@ -17,7 +18,20 @@ if(isset($_POST['']) && isset($_POST[''])){
     }
 
     $gravar = new Portfolio();
+
+    $gravar->Preparar($port_nome, $port_categoria, $port_img);
+
+    if($gravar->Inserir()){
+        echo '<div class="alert alert-success">Job cadastrado com sucesso!</div>';
+    	//Rotas::Redirecionar(2, Rotas::pag_ProdutosADM());
+    }else {
+        echo '<div class="alert alert-success">Produto não cadastrado!';
+    	Sistema::VoltarPagina();
+    	echo '</div>'; 
+    	exit();
+    }
 }
+
 
 $smarty->display('adm_portfolio.tpl');
 
