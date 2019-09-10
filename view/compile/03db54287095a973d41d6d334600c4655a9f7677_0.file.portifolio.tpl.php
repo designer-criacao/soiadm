@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-10 14:24:36
+/* Smarty version 3.1.33, created on 2019-09-10 19:07:02
   from 'C:\xampp\htdocs\soiAdmin\view\portifolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d77dc54f131b1_71058959',
+  'unifunc' => 'content_5d781e86c687a5_03865076',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '03db54287095a973d41d6d334600c4655a9f7677' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\portifolio.tpl',
-      1 => 1568136267,
+      1 => 1568136566,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d77dc54f131b1_71058959 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d781e86c687a5_03865076 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 				<!-- Main -->
 					<article id="main">

@@ -110,7 +110,7 @@
             <h6 class="dropdown-header">Telas do Site:</h6>
             <a class="dropdown-item" href="">Home</a>
             <a class="dropdown-item" href="{$PAG_EMPRESA_ADM}">Empresa</a>
-            <a class="dropdown-item" href="{$PAG_PORTFOLIO_ADM}">Portifólio</a>
+            <a class="dropdown-item" href="{$PAG_LISTAPORT}">Portifólio</a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Outras Páginas:</h6>
           </div>

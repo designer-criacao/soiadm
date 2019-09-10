@@ -24,7 +24,7 @@ if(isset($_POST['nome_img']) && isset($_POST['port_categoria'])){
 
     if($gravar->Inserir()){
         echo '<div class="alert alert-success">Job cadastrado com sucesso!</div>';
-    	//Rotas::Redirecionar(2, Rotas::pag_ProdutosADM());
+    	Rotas::Redirecionar(2, Rotas::pag_ListaPortfolioADM());
     }else {
         echo '<div class="alert alert-success">Produto não cadastrado!';
     	Sistema::VoltarPagina();

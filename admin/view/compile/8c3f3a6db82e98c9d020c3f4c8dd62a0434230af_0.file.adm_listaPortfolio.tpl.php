@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-10 17:16:03
-  from 'C:\xampp\htdocs\soiAdmin\admin\view\lista_clientes.tpl' */
+/* Smarty version 3.1.33, created on 2019-09-10 19:04:29
+  from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_listaPortfolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d780483000688_54590258',
+  'unifunc' => 'content_5d781ded27af34_40426747',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '407b73c4d695621f3f9da005695fd2a2948874d4' => 
+    '8c3f3a6db82e98c9d020c3f4c8dd62a0434230af' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\lista_clientes.tpl',
-      1 => 1568146561,
+      0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_listaPortfolio.tpl',
+      1 => 1568153061,
       2 => 'file',
     ),
   ),
@@ -20,59 +20,51 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d780483000688_54590258 (Smarty_Internal_Template $_smarty_tpl) {
-?><!-- DataTables Example -->
-          <div class="card mb-3">
+function content_5d781ded27af34_40426747 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
-              Tabela de Usuários</div>
+              <?php echo $_smarty_tpl->tpl_vars['PORTFOLIO']->value;?>
+ - <span><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PORTFOLIO_ADM']->value;?>
+"> Cadastrar Portfólio</a></span></div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Nome</th>
-                      <th>E-mail</th>
-                      <th>Telefone</th>
-                      <th>Empresa</th>
-                      <th>Pago</th>
-                      <th>Função</th>
+                      <th>Categoria</th>
+                      <th>Nome da Imagem</th>
+                      <th>URL</th>
                       <th>Editar</th>
-                      <th>Excluír</th>
+                      <th>Excluir</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Nome</th>
-                      <th>E-mail</th>
-                      <th>Telefone</th>
-                      <th>Empresa</th>
-                      <th>Pago</th>
-                      <th>Função</th>
+                      <th>Categoria</th>
+                      <th>Nome da Imagem</th>
+                      <th>URL</th>
                       <th>Editar</th>
-                      <th>Excluír</th>
+                      <th>Excluir</th>
                     </tr>
                   </tfoot>
                   <tbody>
                   <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CLIENTES']->value, 'C');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PORT']->value, 'P');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 ?>
                     <tr>
-                      <td><?php echo $_smarty_tpl->tpl_vars['C']->value['cli_nome'];?>
+                      <td><?php echo $_smarty_tpl->tpl_vars['P']->value['port_categoria'];?>
 </td>
-                      <td><?php echo $_smarty_tpl->tpl_vars['C']->value['cli_email'];?>
+                      <td><?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
 </td>
-                      <td><?php echo $_smarty_tpl->tpl_vars['C']->value['cli_fone'];?>
+                      <td><?php echo $_smarty_tpl->tpl_vars['P']->value['port_url'];?>
 </td>
-                      <td>Raio de Sol</td>
-                      <td>Sim</td>
-                      <td>Diretora</td>
                       <td>
                         <form name="clieditar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['EDITAR_CLIENTES']->value;?>
 ">
-                            <input type="hidden" name="cli_id" id="cli_id" value="<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
+                            <input type="hidden" name="id" id="id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['id'];?>
 ">
                             <button class="btn btn-success"> <i class="fa fa-edit"></i> </button>
                         </form> 
@@ -81,15 +73,13 @@ foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
 /<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
 " class="btn btn-warning btn-block"><i class="fa fa-check"></i>Editar</a></td>-->
                       <td>
-                        <form name="frm_apagar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['APAGAR']->value;?>
-">
+                        <form name="frm_apagar" method="post" action="">
                           <!---botao que apaga o produto de uma vez -->
                           <!--<input type="hidden" name="cli_id" id="cli_id" value="<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
 ">-->
-                          <input type="hidden" name="cli_id" id="cli_id">
-                          <input type="hidden" name="cli_id_apagar" value="<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
+                                                    <input type="hidden" name="id_apagar" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['id'];?>
 ">
-                          <input type="hidden" name="cli_apagar">
+                          <input type="hidden" name="port_apagar">
                           <button class="btn btn-danger" name="btn_apagar"><i class="fa fa-remove"></i>Excluír</button>
                            <!--<a href="<?php echo $_smarty_tpl->tpl_vars['APAGAR']->value;?>
 " class="btn btn-danger btn-block" name="btn_apagar"><i class="fa fa-remove"></i>Excluír</a>--> 

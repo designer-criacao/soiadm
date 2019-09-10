@@ -62,6 +62,10 @@
 			return self::get_SiteADM() . '/adm_portfolio';
 		}
 
+		static function pag_ListaPortfolioADM(){
+			return self::get_SiteADM() . '/adm_listaPortfolio';
+		}
+
 		static function pag_CadClientes(){
 			return self::get_SiteADM() . '/cad_cliente';
 		}

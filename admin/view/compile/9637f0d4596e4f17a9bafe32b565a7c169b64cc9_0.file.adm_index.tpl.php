@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-03-26 20:45:10
+/* Smarty version 3.1.33, created on 2019-09-10 17:31:34
   from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c9ab986612653_20207488',
+  'unifunc' => 'content_5d7808267cc797_29462887',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9637f0d4596e4f17a9bafe32b565a7c169b64cc9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_index.tpl',
-      1 => 1553643897,
+      1 => 1568147487,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c9ab986612653_20207488 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d7808267cc797_29462887 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
@@ -139,7 +139,7 @@ function content_5c9ab986612653_20207488 (Smarty_Internal_Template $_smarty_tpl)
             <a class="dropdown-item" href="">Home</a>
             <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_EMPRESA_ADM']->value;?>
 ">Empresa</a>
-            <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_PORTFOLIO_ADM']->value;?>
+            <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_LISTAPORT']->value;?>
 ">Portifólio</a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Outras Páginas:</h6>

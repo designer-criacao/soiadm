@@ -43,6 +43,7 @@
     $smarty->assign('PAG_ESQUECI_SENHA', Rotas::pag_EsqueciSenhaADM());
     $smarty->assign('PAG_EMPRESA_ADM', Rotas::pag_EmpresaADM());
     $smarty->assign('PAG_PORTFOLIO_ADM', Rotas::pag_PortfolioADM());
+    $smarty->assign('PAG_LISTAPORT', Rotas::pag_ListaPortfolioADM());
     $smarty->assign('PAG_LOGOFF', Rotas::pag_LogoffADM());
     $smarty->assign('PAG_CAD_CLIENTES', Rotas::pag_CadClientes());
     $smarty->assign('PAG_LISTAR_CLIENTES', Rotas::pag_ListarClientes());

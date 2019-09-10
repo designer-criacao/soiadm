@@ -149,8 +149,8 @@
         }
 
         function Apagar($id){
-            $query = "DELETE FROM {$this->prefix}produtos";
-            $query .= " WHERE prod_id = :id ";
+            $query = "DELETE FROM {$this->prefix}portfolio";
+            $query .= " WHERE id = :id ";
             $params = array(
                 ':id' =>  (int)$id //ou int($id)
                 );
