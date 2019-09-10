@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-04 20:55:32
+/* Smarty version 3.1.33, created on 2019-09-10 14:24:36
   from 'C:\xampp\htdocs\soiAdmin\view\portifolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d704ef42cafa9_47245342',
+  'unifunc' => 'content_5d77dc54f131b1_71058959',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '03db54287095a973d41d6d334600c4655a9f7677' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\portifolio.tpl',
-      1 => 1567641318,
+      1 => 1568136267,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d704ef42cafa9_47245342 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d77dc54f131b1_71058959 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 				<!-- Main -->
 					<article id="main">
@@ -49,15 +49,49 @@ function content_5d704ef42cafa9_47245342 (Smarty_Internal_Template $_smarty_tpl)
 									<div class="box alt">
 										<div class="row uniform 50%">
 											<!--<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>-->
-											<div class="6u"><span class="image fit"><a href="http://www.teveporte.com.br"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/siteTeve.jpg" alt="" /></a>Teveporte</span></div>
-											<div class="6u"><span class="image fit"><a href="http://www.esmachine.com.br"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/siteEsmachine.jpg" alt="" /></a>ES Machine</span></div>
-											<div class="4u"><span class="image fit"><img src="" alt="" /></span></div>
+																						<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PORT']->value, 'P');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+?>
+												<?php if ($_smarty_tpl->tpl_vars['P']->value['port_categoria'] == "S") {?>
+													<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['img'];?>
+" alt="" />
+														<a href="http://<?php echo $_smarty_tpl->tpl_vars['P']->value['port_url'];?>
+"><?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
+</a>
+													</span></div>
+												<?php }?>
+											<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 											<br>
 										</div>
 											<hr />
-																				<hr />
+										<h5>Vídeos</h5>
+										<div class="row uniform 50%">
+											<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PORT']->value, 'P');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+?>
+												<?php if ($_smarty_tpl->tpl_vars['P']->value['port_categoria'] == "V") {?>
+													<div class="6u"><span class="video fit">
+														<video controls class="image fit">
+															<source src="<?php echo $_smarty_tpl->tpl_vars['P']->value['img'];?>
+" type="video/mp4">
+														</video><?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
+</span>
+													</div>	
+												<?php }?>
+											<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+											<br>
+										</div>
+										<hr />
 										<h5>Design Gráfico</h5>
 										<div class="row uniform 50%">
 																						
@@ -66,9 +100,13 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 ?>
+											<?php if ($_smarty_tpl->tpl_vars['P']->value['port_categoria'] == "D") {?>
 												<div class="6u"><span class="image fit"><img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['img'];?>
-" alt="" /><?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
-</span></div>
+" alt="" />
+																										<?php echo $_smarty_tpl->tpl_vars['P']->value['nome_img'];?>
+
+												</span></div>
+												<?php }?>
 											<?php
 }
 }

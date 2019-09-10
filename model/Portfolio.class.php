@@ -2,7 +2,7 @@
 	
 	Class Portfolio extends Conexao{
 
-		private $port_nome, $port_categoria, $port_img;
+		private $port_nome, $port_categoria, $port_img, $port_url;
 
 
 		function __construct(){
@@ -67,15 +67,16 @@
                 'port_categoria' => $lista['port_categoria'],
                 'nome_img' => $lista['nome_img'],
                 'img' => $lista['img'],
+                'port_url' => $lista['port_url'],
 
 				
 				// 'prod_img' => Rotas::ImageLink($lista['prod_img'],180,180),
-				'img' => Rotas::ImageLink($lista['img'],900,400),
+				'img' => Rotas::ImageLink($lista['img'],900,520),
 				// 'prod_img_p' => Rotas::ImageLink($lista['prod_img'],80,80),
 				//'prod_img' => $lista['prod_img'],
 				
-                'port_img_arquivo'   => Rotas::get_SiteRaiz() .'/'. Rotas::get_ImagePasta().$lista['img'], 
-                'port_img_atual'     => $lista['img']
+                'port_img_arquivo'   => Rotas::get_SiteRaiz() .'/'. Rotas::get_ImagePasta().$lista['img']
+                //'port_img_atual'     => $lista['img']
 				);
 
 			$i++;
@@ -84,24 +85,26 @@
 
 
 
-		function Preparar($port_nome, $port_categoria, $port_img){
+		function Preparar($port_nome, $port_categoria, $port_img, $port_url){
         
-                $this->setPort_nome($port_nome);
-                $this->setPort_categoria($port_categoria);
-                $this->setPort_img($port_img);
-            }
+            $this->setPort_nome($port_nome);
+            $this->setPort_categoria($port_categoria);
+            $this->setPort_img($port_img);
+            $this->setPort_url($port_url);
+        }
 
 
 
         function Inserir(){
-        $query = "INSERT INTO {$this->prefix}portfolio (port_categoria, nome_img, img)";
+        $query = "INSERT INTO {$this->prefix}portfolio (port_categoria, nome_img, img, port_url)";
         $query.= " VALUES ";
-        $query.= " ( :port_categoria, :nome_img, :img)";
+        $query.= " ( :port_categoria, :nome_img, :img, :port_url)";
         
         $params = array(
         ':port_categoria'=> $this->getPort_categoria(),   
         ':nome_img'=> $this->getPort_nome(),
-        ':img'=> $this->getPort_img()
+        ':img'=> $this->getPort_img(),
+        'port_url' => $this->getPort_url()
         );
 
           if($this->ExecuteSQL($query, $params)):
@@ -119,28 +122,15 @@
 
         function Alterar($id){
           
-        $query = " UPDATE {$this->prefix}produtos SET prod_nome=:prod_nome, prod_categoria=:prod_categoria," ;
-        $query.= " prod_ativo=:prod_ativo, prod_modelo=:prod_modelo, prod_ref=:prod_ref,";
-        $query.= " prod_valor=:prod_valor, prod_estoque=:prod_estoque, prod_peso=:prod_peso , ";
-        $query.= " prod_altura=:prod_altura, prod_largura=:prod_largura,";
-        $query.= " prod_comprimento=:prod_comprimento ,prod_img=:prod_img, prod_desc=:prod_desc, prod_slug=:prod_slug";
-       $query.= " WHERE prod_id = :prod_id";
+        $query = " UPDATE {$this->prefix}produtos SET port_categoria=:port_categoria," ;
+        $query.= " nome_img=:nome_img, img=:img, port_url=:port_url";
+        $query.= " WHERE prod_id = :prod_id";
         
         $params = array(
-        ':prod_nome'=> $this->getProd_nome(),   
-        ':prod_categoria'=> $this->getProd_categoria(),   
-        ':prod_ativo'=> $this->getProd_ativo(),   
-        ':prod_modelo'=> $this->getProd_modelo(),   
-        ':prod_ref'=> $this->getProd_ref(),   
-        ':prod_valor'=> $this->getProd_valor(),   
-        ':prod_estoque'=> $this->getProd_estoque(),   
-        ':prod_peso'=> $this->getProd_peso(),   
-        ':prod_altura'=> $this->getProd_altura() , 
-        ':prod_largura'=> $this->getProd_largura(),
-        ':prod_comprimento'=> $this->getProd_comprimento(),   
-        ':prod_img'=> $this->getProd_img(),   
-        ':prod_desc'=> $this->getProd_desc(),   
-        ':prod_slug'=> $this->getProd_slug(),   
+        'port_categoria'=> $this->getPort_categoria(),
+        'nome_img' => $this->getPort_nome(),
+        'img' => $this->getPort_img(),
+        'port_url' => $this->getPort_url(),  
         ':prod_id'=> (int)$id,   
                      
         );
@@ -179,31 +169,37 @@
 
 		//MÉTODOS GET
 
-	function getPort_nome() {
-        return $this->port_nome;
-    }
+        function getPort_nome() {
+            return $this->port_nome;
+        }
 
-    function getPort_categoria() {
-        return $this->port_categoria;
-    }
+        function getPort_categoria() {
+            return $this->port_categoria;
+        }
 
-    function getPort_img() {
-        return $this->port_img;
-    }
+        function getPort_img() {
+            return $this->port_img;
+        }
 
+        function getPort_url(){
+            return $this->port_url;
+        }
 
-    //MÉTODOS SET
-    function setPort_nome($port_nome) {
-        $this->port_nome = $port_nome;
-    }
+        //MÉTODOS SET
+        function setPort_nome($port_nome) {
+            $this->port_nome = $port_nome;
+        }
 
-    function setPort_categoria($port_categoria) {
-        $this->port_categoria = $port_categoria;
-    }
+        function setPort_categoria($port_categoria) {
+            $this->port_categoria = $port_categoria;
+        }
 
-    function setPort_img($port_img) {
-        $this->port_img = $port_img;
-    }
+        function setPort_img($port_img) {
+            $this->port_img = $port_img;
+        }
 
+        function setPort_url($port_url){
+            $this->port_url = $port_url;
+        }
     }
 ?>

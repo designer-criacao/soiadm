@@ -7,6 +7,7 @@ if(isset($_POST['nome_img']) && isset($_POST['port_categoria'])){
     $port_nome = $_POST['nome_img'];
     $port_categoria = $_POST['port_categoria'];
     $port_img = $_FILES['img']['name'];
+    $port_url = $_POST['port_url'];
 
     if(!empty($_FILES)){
         $upload = new ImageUpload();
@@ -19,7 +20,7 @@ if(isset($_POST['nome_img']) && isset($_POST['port_categoria'])){
 
     $gravar = new Portfolio();
 
-    $gravar->Preparar($port_nome, $port_categoria, $port_img);
+    $gravar->Preparar($port_nome, $port_categoria, $port_img, $port_url);
 
     if($gravar->Inserir()){
         echo '<div class="alert alert-success">Job cadastrado com sucesso!</div>';

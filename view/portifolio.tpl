@@ -26,27 +26,32 @@
 									<div class="box alt">
 										<div class="row uniform 50%">
 											<!--<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>-->
-											<div class="6u"><span class="image fit"><a href="http://www.teveporte.com.br"><img src="{$GET_TEMA}/images/siteTeve.jpg" alt="" /></a>Teveporte</span></div>
+											{* <div class="6u"><span class="image fit"><a href="http://www.teveporte.com.br"><img src="{$GET_TEMA}/images/siteTeve.jpg" alt="" /></a>Teveporte</span></div>
 											<div class="6u"><span class="image fit"><a href="http://www.esmachine.com.br"><img src="{$GET_TEMA}/images/siteEsmachine.jpg" alt="" /></a>ES Machine</span></div>
-											<div class="4u"><span class="image fit"><img src="" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="" alt="" /></span></div> *}
+											{foreach from=$PORT item=P}
+												{if $P.port_categoria == "S"}
+													<div class="6u"><span class="image fit"><img src="{$P.img}" alt="" />
+														<a href="http://{$P.port_url}">{$P.nome_img}</a>
+													</span></div>
+												{/if}
+											{/foreach}
 											<br>
 										</div>
 											<hr />
-										{* <h5>Vídeos</h5>
+										<h5>Vídeos</h5>
 										<div class="row uniform 50%">
-											<!--<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>-->
-											<div class="6u"><span class="video fit">
-											<video controls class="image fit">
-												<source src="{$GET_TEMA}/videos/Site_Teveporte.mp4" type="video/mp4">
-											</video>Teveporte</span></div>
-
-											<div class="6u"><span class="video fit">
-											<video controls class="image fit">
-												<source src="{$GET_TEMA}/videos/Site_Teveporte.mp4" type="video/mp4">
-											</video>Teveporte</span></div>
-											
+											{foreach from=$PORT item=P}
+												{if $P.port_categoria == "V"}
+													<div class="6u"><span class="video fit">
+														<video controls class="image fit">
+															<source src="{$P.img}" type="video/mp4">
+														</video>{$P.nome_img}</span>
+													</div>	
+												{/if}
+											{/foreach}
 											<br>
-										</div> *}
+										</div>
 										<hr />
 										<h5>Design Gráfico</h5>
 										<div class="row uniform 50%">
@@ -58,7 +63,12 @@
 											<div class="6u"><span class="image fit"><img src="{$GET_TEMA}/images/bar_tabacaria.jpg" alt="" />Bar e Tabacária do Dadá</span></div> *}
 											
 											{foreach from=$PORT item=P}
-												<div class="6u"><span class="image fit"><img src="{$P.img}" alt="" />{$P.nome_img}</span></div>
+											{if $P.port_categoria == "D"}
+												<div class="6u"><span class="image fit"><img src="{$P.img}" alt="" />
+													{* <a href="http://{$P.port_url}">{$P.nome_img}</a> *}
+													{$P.nome_img}
+												</span></div>
+												{/if}
 											{/foreach}
 										</div>
 									</div>

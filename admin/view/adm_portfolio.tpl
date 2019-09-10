@@ -35,13 +35,13 @@
                     </div>
                 </div>
 
-                <!--
                 <div class="form-group">
-                    <label for="text">VALORES</label>
+                    <label for="text">Endereço URL</label>
                     <div class="form-label-group">
-                        <input type="text" id="valores" name="valores" class="form-control" placeholder="VALORES" required="required">
+                        <input type="text" id="port_url" name="port_url" class="form-control" placeholder="URL">
                     </div>
                 </div>
+                <!--
                 <div class="form-group">
                     <label for="text">MISSÃO</label>
                     <div class="form-label-group">

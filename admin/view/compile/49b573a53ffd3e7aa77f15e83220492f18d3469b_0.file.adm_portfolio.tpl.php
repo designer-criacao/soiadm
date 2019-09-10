@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-04 20:06:19
+/* Smarty version 3.1.33, created on 2019-09-10 13:52:02
   from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_portfolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d70436b6f8239_46747042',
+  'unifunc' => 'content_5d77d4b2abd615_14829909',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49b573a53ffd3e7aa77f15e83220492f18d3469b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_portfolio.tpl',
-      1 => 1567638373,
+      1 => 1568134294,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d70436b6f8239_46747042 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d77d4b2abd615_14829909 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="tinymce/tinymce/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
 >    
@@ -58,13 +58,13 @@ echo '<script'; ?>
                     </div>
                 </div>
 
-                <!--
                 <div class="form-group">
-                    <label for="text">VALORES</label>
+                    <label for="text">Endereço URL</label>
                     <div class="form-label-group">
-                        <input type="text" id="valores" name="valores" class="form-control" placeholder="VALORES" required="required">
+                        <input type="text" id="port_url" name="port_url" class="form-control" placeholder="URL">
                     </div>
                 </div>
+                <!--
                 <div class="form-group">
                     <label for="text">MISSÃO</label>
                     <div class="form-label-group">
