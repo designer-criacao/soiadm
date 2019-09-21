@@ -12,7 +12,7 @@ if(isset(Rotas::$pag[1])){
 if(isset($_POST['btn_apagar'])){
     $port_id = $_POST['id_apagar'];
     if($portfolio->Apagar($port_id)){
-        echo '<div class="alert alert-success">Pedido excluído com sucesso!</div>';
+        echo '<div class="alert alert-success">Portfólio excluído com sucesso!</div>';
         Rotas::Redirecionar(0.1, Rotas::pag_ListaPortfolioADM());
     }
 }
