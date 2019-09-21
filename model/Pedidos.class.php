@@ -1,5 +1,8 @@
 <?php  
 	class Pedido extends Conexao{
+
+		private $nome, $email, $razao, $telefone, $regiao, $servico, $data_pedido; 
+
 		function __construct(){
 			parent::__construct();
 		}
@@ -156,5 +159,65 @@
 			unset($_SESSION['PED']['ref']);
 			
 		}
+
+		//MÉTODOS GET
+
+        function getNome() {
+            return $this->nome;
+        }
+
+        function getEmail() {
+            return $this->email;
+        }
+
+        function getRazao() {
+            return $this->razao;
+        }
+
+        function getTelefone(){
+            return $this->telefone;
+		}
+		
+		function getRegiao(){
+			return $this->regiao;
+		}
+
+		function getTipoServico(){
+			return $this->servico;
+		}
+
+		function getDataPedido(){
+			return $this->data_pedido;
+		}
+
+        //MÉTODOS SET
+        function setNome($nome) {
+            $this->nome = $nome;
+        }
+
+        function setEmail($email) {
+            $this->email = $email;
+        }
+
+        function setRazao($razao) {
+            $this->razao = $razao;
+        }
+
+        function setTelefone($telefone){
+            $this->telefone = $telefone;
+		}
+		
+		function setRegiao($regiao){
+			$this->setRegiao = $regiao;
+		}
+
+		function setTipoServico($tipo_servico){
+			$this->servico = $tipo_servico;
+		}
+
+		function setDataPedido($data_pedido){
+			$this->data_pedido = $data_pedido;
+		}
+
 	}
 ?>
