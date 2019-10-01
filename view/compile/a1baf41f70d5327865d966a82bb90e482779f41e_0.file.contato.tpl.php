@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-10 19:10:54
+/* Smarty version 3.1.33, created on 2019-09-30 23:41:06
   from 'C:\xampp\htdocs\soiAdmin\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d781f6eabab95_88194717',
+  'unifunc' => 'content_5d92bcc2971fd0_09192419',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a1baf41f70d5327865d966a82bb90e482779f41e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\contato.tpl',
-      1 => 1537286304,
+      1 => 1569897656,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d781f6eabab95_88194717 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 				<!-- Main -->
 					<article id="main">
@@ -44,7 +44,7 @@ function content_5d781f6eabab95_88194717 (Smarty_Internal_Template $_smarty_tpl)
 
 								<section>
 									<h4>Preencha o formulário para orçamento.</h4>
-									<form name="contato" method="post" action="envia.php" >
+									<form name="contato" method="post" action="" enctype="multipart/form-data">
 										<div class="row uniform">
 											<div class="6u 12u$(xsmall)">
 												<label for="demo-priority-low">Nome</label>
@@ -59,12 +59,36 @@ function content_5d781f6eabab95_88194717 (Smarty_Internal_Template $_smarty_tpl)
 												<label for="demo-priority-low">Razão Social</label>
 												<input type="text" name="razao" id="demo-name" value="" placeholder="Razão Social" />
 											</div>
+
+											<div class="6u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Tipo de Serviço</label>
+												<div class="select-wrapper">
+													<select name="servico" id="">
+														<option value="">- Selecionar -</option>
+														<option value="Design Gráfico">Design Gráfico</option>
+														<option value="Web Design">Web Design</option>
+														<option value="Design Gráfico/Web Design">Design Gráfico/Web Design</option>
+													</select>
+												</div>
+											</div>
+
 											<div class="6u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Telefone</label>
 												<input type="text" name="phone" id="demo-email" value="" placeholder="Telefone" />
 											</div>
 
-
+											<div class="6u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Região</label>
+												<div class="select-wrapper">
+													<select name="regiao" id="demo-category">
+														<option value="">- Selecionar -</option>
+														<option value="zona norte">Zona Norte</option>
+														<option value="zona oeste">Zona Oeste</option>
+														<option value="zona sul">Zona Sul</option>
+														<option value="centro">Centro</option>
+													</select>
+												</div>
+											</div>
 
 											<!--<div class="6u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Telefone</label>
@@ -74,35 +98,17 @@ function content_5d781f6eabab95_88194717 (Smarty_Internal_Template $_smarty_tpl)
 												<label for="demo-priority-low">Razão</label>
 												<input type="text" name="name" id="demo-name" value="" placeholder="Nome" />
 											</div>-->
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="regiao" id="demo-category">
-														<option value="">- Região -</option>
-														<option value="zona norte">Zona Norte</option>
-														<option value="zona oeste">Zona Oeste</option>
-														<option value="zona sul">Zona Sul</option>
-														<option value="centro">Centro</option>
-													</select>
-												</div>
-											</div>
-											<div class="4u 12u$(small)">
-												<input type="radio" id="demo-priority-low" name="cliente1" checked>
-												<label for="demo-priority-low">Design Gráfico</label>
-											</div>
-											<div class="4u 12u$(small)">
-												<input type="radio" id="demo-priority-normal" name="cliente2">
-												<label for="demo-priority-normal">Web Design</label>
-											</div>
-											<div class="4u$ 12u$(small)">
-												<input type="radio" id="demo-priority-high" name="cliente3">
-												<label for="demo-priority-high">Design Gráfico/Web Design</label>
-											</div>
-											<!--<div class="6u 12u$(small)">
+											
+
+												
+
+																						<!--<div class="6u 12u$(small)">
 												<input type="checkbox" id="demo-copy" name="demo-copy">
 												<label for="demo-copy">Email me a copy</label>
 											</div>-->
 											<div class="6u$ 12u$(small)">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<!--checked-->
+												<input type="checkbox" id="demo-human" name="demo-human">
 												<label for="demo-human">Não sou um robô</label>
 											</div>
 											<div class="12u$">

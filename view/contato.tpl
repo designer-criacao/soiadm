@@ -21,7 +21,7 @@
 
 								<section>
 									<h4>Preencha o formulário para orçamento.</h4>
-									<form name="contato" method="post" action="envia.php" >
+									<form name="contato" method="post" action="" enctype="multipart/form-data">
 										<div class="row uniform">
 											<div class="6u 12u$(xsmall)">
 												<label for="demo-priority-low">Nome</label>
@@ -36,12 +36,36 @@
 												<label for="demo-priority-low">Razão Social</label>
 												<input type="text" name="razao" id="demo-name" value="" placeholder="Razão Social" />
 											</div>
+
+											<div class="6u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Tipo de Serviço</label>
+												<div class="select-wrapper">
+													<select name="servico" id="">
+														<option value="">- Selecionar -</option>
+														<option value="Design Gráfico">Design Gráfico</option>
+														<option value="Web Design">Web Design</option>
+														<option value="Design Gráfico/Web Design">Design Gráfico/Web Design</option>
+													</select>
+												</div>
+											</div>
+
 											<div class="6u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Telefone</label>
 												<input type="text" name="phone" id="demo-email" value="" placeholder="Telefone" />
 											</div>
 
-
+											<div class="6u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Região</label>
+												<div class="select-wrapper">
+													<select name="regiao" id="demo-category">
+														<option value="">- Selecionar -</option>
+														<option value="zona norte">Zona Norte</option>
+														<option value="zona oeste">Zona Oeste</option>
+														<option value="zona sul">Zona Sul</option>
+														<option value="centro">Centro</option>
+													</select>
+												</div>
+											</div>
 
 											<!--<div class="6u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Telefone</label>
@@ -51,18 +75,11 @@
 												<label for="demo-priority-low">Razão</label>
 												<input type="text" name="name" id="demo-name" value="" placeholder="Nome" />
 											</div>-->
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="regiao" id="demo-category">
-														<option value="">- Região -</option>
-														<option value="zona norte">Zona Norte</option>
-														<option value="zona oeste">Zona Oeste</option>
-														<option value="zona sul">Zona Sul</option>
-														<option value="centro">Centro</option>
-													</select>
-												</div>
-											</div>
-											<div class="4u 12u$(small)">
+											
+
+												
+
+											{* <div class="4u 12u$(small)">
 												<input type="radio" id="demo-priority-low" name="cliente1" checked>
 												<label for="demo-priority-low">Design Gráfico</label>
 											</div>
@@ -73,13 +90,14 @@
 											<div class="4u$ 12u$(small)">
 												<input type="radio" id="demo-priority-high" name="cliente3">
 												<label for="demo-priority-high">Design Gráfico/Web Design</label>
-											</div>
+											</div> *}
 											<!--<div class="6u 12u$(small)">
 												<input type="checkbox" id="demo-copy" name="demo-copy">
 												<label for="demo-copy">Email me a copy</label>
 											</div>-->
 											<div class="6u$ 12u$(small)">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<!--checked-->
+												<input type="checkbox" id="demo-human" name="demo-human">
 												<label for="demo-human">Não sou um robô</label>
 											</div>
 											<div class="12u$">
