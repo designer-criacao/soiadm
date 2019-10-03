@@ -37,7 +37,7 @@
                       </td>
                       <!--<td><a href="{$EDITAR_CLIENTES}/{$C.cli_id}" class="btn btn-warning btn-block"><i class="fa fa-check"></i>Editar</a></td>-->
                       <td>
-                        <form name="frm_apagar" method="post" action="">
+                        <form name="frm_apagar" method="post" action="" enctype="multipart/form-data">
                           <!---botao que apaga o produto de uma vez -->
                           <!--<input type="hidden" name="cli_id" id="cli_id" value="{$C.cli_id}">-->
                           {* <input type="hidden" name="id" id="id"> *}

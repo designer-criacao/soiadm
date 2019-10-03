@@ -29,7 +29,7 @@ class ComposerStaticInit5caf0346dafb749d4583961435e63d2d
         'POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.pop3.php',
         'PagamentoPS' => __DIR__ . '/../..' . '/model/PagamentoPS.class.php',
         'Paginacao' => __DIR__ . '/../..' . '/model/Paginacao.class.php',
-        'Pedido' => __DIR__ . '/../..' . '/model/Pedidos.class.php',
+        'Pedidos' => __DIR__ . '/../..' . '/model/Pedidos.class.php',
         'Portfolio' => __DIR__ . '/../..' . '/model/Portfolio.class.php',
         'ProdutosImages' => __DIR__ . '/../..' . '/model/ProdutosImages.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',

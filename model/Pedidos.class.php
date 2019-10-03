@@ -1,7 +1,7 @@
 <?php  
-	class Pedido extends Conexao{
+	class Pedidos extends Conexao{
 
-		private $id, $nome, $email, $razao, $telefone, $regiao, $servico, $data_pedido; 
+		private $id, $nome, $email, $razao, $telefone, $regiao, $servico, $descricao, $data_pedido; 
 
 		function __construct(){
 			parent::__construct();
@@ -10,9 +10,9 @@
 		function PedidoGravar(){
 			// $retorno = FALSE;
 			$query = "INSERT INTO ".$this->prefix."pedidos ";
-			$query .= "(nome, email, razao_social, telefone, regiao_sampa, tipo_servico, data_pedido)";
+			$query .= "(nome, email, razao_social, telefone, regiao_sampa, tipo_servico, descricao, data_pedido)";
 			$query .= " VALUES ";
-			$query .= "(:nome, :email, :razao, :telefone, :regiao, :servico, :data_pedido)";
+			$query .= "(:nome, :email, :razao, :telefone, :regiao, :servico, :descricao, :data_pedido)";
 
 			$params = array(
 				':nome' => $this->getNome(),
@@ -21,14 +21,35 @@
 				':telefone' => $this->getTelefone(),
 				':regiao' => $this->getRegiao(),
 				':servico' => $this->getTipoServico(),
+				':descricao' => $this->getDescricao(),
 				':data_pedido' => Sistema::DataAtualUS()
 				);
 
-			$this->ExecuteSQL($query, $params);
+			// $this->ExecuteSQL($query, $params);
+			if($this->ExecuteSQL($query, $params)):
+               
+					return TRUE;
+				
+				else:
+					
+					return FALSE; 
+			
+			endif;
 			
 		}
 
-		function Preparar($nome, $email, $razao, $telefone, $regiao, $servico, $data_pedido)
+		function GetPedido(){
+			//Query para buscar os produtos de uma categoria específica
+			//$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categoria c ON p.port_categoria = c.id";
+            $query = "SELECT * FROM {$this->prefix}pedidos";
+			//$query .= " LIMIT 0,6";
+			$query .= " ORDER BY id DESC";
+			//$query .= $this->PaginacaoLinks("d", $this->prefix."portfolio");
+			$this->ExecuteSQL($query);
+			$this->GetLista();
+		}
+
+		function Preparar($nome, $email, $razao, $telefone, $regiao, $servico, $descricao, $data_pedido)
 		{
 			$this->setNome($nome);
 			$this->setEmail($email);
@@ -36,6 +57,7 @@
 			$this->setTelefone($telefone);
 			$this->setRegiao($regiao);
 			$this->setTipoServico($servico);
+			$this->setDescricao($descricao);
 			$this->setDataPedido($data_pedido);
 			
 		}
@@ -62,19 +84,31 @@
         while ($lista = $this->ListarDados()):
             
         $this->itens[$i] = array(
+				'id' => $lista['id'],
                 'nome'    => $lista['nome'],
                 'email'  => $lista['email'],
                 'razao'   => $lista['razao_social'],
                 'telefone' => $lista['telefone'],
                 'regiao'   => $lista['regiao_sampa'],
 				'servico'     => $lista['tipo_servico'],
+				'descricao' => $lista['descricao'],
 				'data_pedido'  => Sistema::Fdata($lista['data_pedido'])
             );
             $i++;
         
         endwhile;
 
-    	}
+		}
+		
+		function GetPedidoID($id){
+			//Query para buscar os produtos de uma categoria específica
+			//$query = "SELECT * FROM {$this->prefix}portfolio p  INNER JOIN {$this->prefix}categoria c ON p.port_categoria = c.id";
+            $query = "SELECT * FROM {$this->prefix}pedidos";
+			$query .= " AND id = :id";
+			$params = array(':id'=>(int)$id);
+			$this->ExecuteSQL($query, $params);
+			$this->GetLista();
+		}
 
     // 	function GetPedidosRef($ref){
         
@@ -109,19 +143,21 @@
     //     $this->GetLista();
     // 	}
 
-    	function  Apagar($ped_cod){
+    	function Apagar($id){
         
         // apagando o PEDIDO  
         
         // monto a minha SQL de apagar o pedido 
         $query =  " DELETE FROM {$this->prefix}pedidos WHERE id = :id";        
         // parametros
-        $params = array(':id'=>$id);
+        $params = array(':id' => $id);
         // executo a minha SQL
-        $this->ExecuteSQL($query, $params);
+        //$this->ExecuteSQL($query, $params);
 			// executo a minha SQL
 			if($this->ExecuteSQL($query, $params)):
 				return TRUE;
+			else:
+				return false;
 			endif;
     	}
 
@@ -176,6 +212,10 @@
 			return $this->servico;
 		}
 
+		function getDescricao(){
+			return $this->descricao;
+		}
+
 		function getDataPedido(){
 			return $this->data_pedido;
 		}
@@ -198,11 +238,15 @@
 		}
 		
 		function setRegiao($regiao){
-			$this->setRegiao = $regiao;
+			$this->regiao = $regiao;
 		}
 
 		function setTipoServico($tipo_servico){
 			$this->servico = $tipo_servico;
+		}
+
+		function setDescricao($descricao){
+			$this->descricao = $descricao;
 		}
 
 		function setDataPedido($data_pedido){

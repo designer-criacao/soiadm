@@ -24,7 +24,7 @@ return array(
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
     'PagamentoPS' => $baseDir . '/model/PagamentoPS.class.php',
     'Paginacao' => $baseDir . '/model/Paginacao.class.php',
-    'Pedido' => $baseDir . '/model/Pedidos.class.php',
+    'Pedidos' => $baseDir . '/model/Pedidos.class.php',
     'Portfolio' => $baseDir . '/model/Portfolio.class.php',
     'ProdutosImages' => $baseDir . '/model/ProdutosImages.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',

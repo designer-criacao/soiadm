@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-30 23:41:06
+/* Smarty version 3.1.33, created on 2019-10-02 23:55:22
   from 'C:\xampp\htdocs\soiAdmin\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d92bcc2971fd0_09192419',
+  'unifunc' => 'content_5d95631ad41cb2_37352748',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a1baf41f70d5327865d966a82bb90e482779f41e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\contato.tpl',
-      1 => 1569897656,
+      1 => 1570071149,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d95631ad41cb2_37352748 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 				<!-- Main -->
 					<article id="main">
@@ -59,11 +59,16 @@ function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl)
 												<label for="demo-priority-low">Razão Social</label>
 												<input type="text" name="razao" id="demo-name" value="" placeholder="Razão Social" />
 											</div>
-
+											
 											<div class="6u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Telefone</label>
+												<input type="text" name="phone" id="demo-email" value="" placeholder="Telefone" />
+											</div>
+
+											<div class="12u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Tipo de Serviço</label>
 												<div class="select-wrapper">
-													<select name="servico" id="">
+													<select name="servico"  id="demo-category">
 														<option value="">- Selecionar -</option>
 														<option value="Design Gráfico">Design Gráfico</option>
 														<option value="Web Design">Web Design</option>
@@ -72,15 +77,10 @@ function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl)
 												</div>
 											</div>
 
-											<div class="6u$ 12u$(xsmall)">
-												<label for="demo-priority-low">Telefone</label>
-												<input type="text" name="phone" id="demo-email" value="" placeholder="Telefone" />
-											</div>
-
-											<div class="6u$ 12u$(xsmall)">
-												<label for="demo-priority-low">Região</label>
+											<div class="12u$ 12u$(xsmall)">
+												<label for="demo-priority-low">Região de São Paulo</label>
 												<div class="select-wrapper">
-													<select name="regiao" id="demo-category">
+													<select name="regiaoSampa"  id="demo-category">
 														<option value="">- Selecionar -</option>
 														<option value="zona norte">Zona Norte</option>
 														<option value="zona oeste">Zona Oeste</option>
@@ -89,6 +89,7 @@ function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl)
 													</select>
 												</div>
 											</div>
+
 
 											<!--<div class="6u$ 12u$(xsmall)">
 												<label for="demo-priority-low">Telefone</label>
@@ -111,15 +112,18 @@ function content_5d92bcc2971fd0_09192419 (Smarty_Internal_Template $_smarty_tpl)
 												<input type="checkbox" id="demo-human" name="demo-human">
 												<label for="demo-human">Não sou um robô</label>
 											</div>
+
 											<div class="12u$">
 												<textarea name="mensagem" id="demo-message" placeholder="Digite os detalhes de sua solicitação" rows="6"></textarea>
 											</div>
+
 											<div class="12u$">
 												<ul class="actions">
 													<li><input name="enviar" type="submit" value="Enviar" class="special" /></li>
 													<li><input name="limpar" type="reset" value="Limpar" /></li>
 												</ul>
 											</div>
+
 										</div>
 									</form>
 								</section>

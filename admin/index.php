@@ -47,9 +47,9 @@
     $smarty->assign('PAG_LOGOFF', Rotas::pag_LogoffADM());
     $smarty->assign('PAG_CAD_CLIENTES', Rotas::pag_CadClientes());
     $smarty->assign('PAG_LISTAR_CLIENTES', Rotas::pag_ListarClientes());
+    $smarty->assign('PAG_PEDIDOS', Rotas::pag_ListaPedido());
     /*
     $smarty->assign('PAG_ADM_CLIENTE', Rotas::pag_ClientesADM());
-    $smarty->assign('PAG_ADM_PEDIDOS', Rotas::pag_PedidosADM());
     $smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
     $smarty->assign('PAG_CATEGORIAS', Rotas::pag_CategoriasADM());
     $smarty->assign('PAG_ADM_PRODUTOS', Rotas::pag_ProdutosADM());
