@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-10 19:04:29
+/* Smarty version 3.1.33, created on 2019-10-03 20:38:33
   from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_listaPortfolio.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d781ded27af34_40426747',
+  'unifunc' => 'content_5d968679409fc4_70571208',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8c3f3a6db82e98c9d020c3f4c8dd62a0434230af' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_listaPortfolio.tpl',
-      1 => 1568153061,
+      1 => 1570074217,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d781ded27af34_40426747 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d968679409fc4_70571208 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
@@ -73,7 +73,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 /<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
 " class="btn btn-warning btn-block"><i class="fa fa-check"></i>Editar</a></td>-->
                       <td>
-                        <form name="frm_apagar" method="post" action="">
+                        <form name="frm_apagar" method="post" action="" enctype="multipart/form-data">
                           <!---botao que apaga o produto de uma vez -->
                           <!--<input type="hidden" name="cli_id" id="cli_id" value="<?php echo $_smarty_tpl->tpl_vars['C']->value['cli_id'];?>
 ">-->

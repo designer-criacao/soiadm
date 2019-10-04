@@ -5,7 +5,7 @@
               Lista de Pedidos</div>
             <div class="card-body">
               <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
                   <thead class="thead-dark">
                     <tr>
                       <th>Nome</th>
@@ -19,7 +19,7 @@
                       <th> X </th>
                     </tr>
                   </thead>
-                  <tfoot>
+                  <tfoot class="thead-dark">
                     <tr>
                       <th>Nome</th>
                       <th>E-mail</th>
@@ -51,7 +51,7 @@
                           {* <input type="hidden" name="id" id="id"> *}
                           <input type="hidden" name="id_apagar" value="{$P.id}">
                           <input type="hidden" name="ped_apagar">
-                          <button class="btn btn-danger" name="btn_apagar"><i class="fa fa-remove"></i>Excluír</button>
+                          <button class="btn btn-outline-danger" name="btn_apagar"><i class="fa fa-remove"></i>Excluír</button>
                            <!--<a href="{$APAGAR}" class="btn btn-danger btn-block" name="btn_apagar"><i class="fa fa-remove"></i>Excluír</a>--> 
                         </form>
                       </td>

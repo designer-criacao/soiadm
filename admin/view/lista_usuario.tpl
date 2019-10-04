@@ -8,22 +8,14 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead class="thead-dark">
                     <tr>
-                      <th>Nome</th>
+                      <th>Usuário</th>
                       <th>E-mail</th>
-                      <th>Nível de Acesso</th>
-                      <th>Setor</th>
-                      <th>Data de Cadastro</th>
-                      <th>Função</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Nome</th>
+                      <th>Usuário</th>
                       <th>E-mail</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -31,10 +23,6 @@
                     <tr>
                       <td>{$U.user_nome}</td>
                       <td>{$U.user_email}</td>
-                      <td></td>
-                      <td></td>
-                      <td>2011/04/25</td>
-                      <td></td>
                     </tr>
                   {/foreach}
                    

@@ -34,7 +34,7 @@
                   </div>
                   <div class="mr-5">Lista de Pedidos</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
+                <a class="card-footer text-white clearfix small z-1" href="{$PEDIDOS}">
                   <span class="float-left">Ver Detalhes</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>

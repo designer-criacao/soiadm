@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-26 13:32:39
+/* Smarty version 3.1.33, created on 2019-10-03 23:42:15
   from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd341a7dd0e96_40219668',
+  'unifunc' => 'content_5d96b18769a4c1_35488370',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72f2e2e67053b51bc84804af0196569f006ce880' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_home.tpl',
-      1 => 1540571547,
+      1 => 1570156932,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd341a7dd0e96_40219668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d96b18769a4c1_35488370 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Area Chart Example-->
           <!--<div class="card mb-3">
             <div class="card-header">
@@ -57,7 +57,8 @@ function content_5bd341a7dd0e96_40219668 (Smarty_Internal_Template $_smarty_tpl)
                   </div>
                   <div class="mr-5">Lista de Pedidos</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
+                <a class="card-footer text-white clearfix small z-1" href="<?php echo $_smarty_tpl->tpl_vars['PEDIDOS']->value;?>
+">
                   <span class="float-left">Ver Detalhes</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>

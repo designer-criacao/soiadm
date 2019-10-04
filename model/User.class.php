@@ -48,22 +48,6 @@ class User extends Conexao{
              'user_id'        =>  $lista['user_id'],
              'user_nome'      =>  $lista['user_nome'],
              'user_email'     =>  $lista['user_email']
-             /*'cli_endereco'  =>  $lista['cli_endereco'],
-             'cli_numero'    =>  $lista['cli_numero'],
-             'cli_bairro'    =>  $lista['cli_bairro'],
-             'cli_cidade'    =>  $lista['cli_cidade'],
-             'cli_uf'        =>  $lista['cli_uf'],
-             'cli_cpf'       =>  $lista['cli_cpf'],
-             'cli_cep'       =>  $lista['cli_cep'],
-             'cli_rg'        =>  $lista['cli_rg'],
-             'cli_ddd'       =>  $lista['cli_ddd'],
-             'cli_fone'      =>  $lista['cli_fone'],
-             'cli_email'     =>  $lista['cli_email'],
-             'cli_celular'   =>  $lista['cli_celular'],
-             'cli_pass'      =>  $lista['cli_pass'],
-             'cli_data_nasc' =>  $lista['cli_data_nasc'],
-             'cli_hora_cad'  => $lista['cli_hora_cad'],
-             'cli_data_cad'  =>  Sistema::Fdata($lista['cli_data_cad'])*/  
         );
         
             $i++;
