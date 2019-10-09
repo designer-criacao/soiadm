@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-25 23:04:14
+/* Smarty version 3.1.33, created on 2019-10-08 21:50:54
   from 'C:\xampp\htdocs\soiAdmin\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd2761ed0b7f4_27626242',
+  'unifunc' => 'content_5d9d2eee37f0f4_86465681',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c28a590592e4f1167ee332788ae2a25dee7c76f7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\home.tpl',
-      1 => 1537292082,
+      1 => 1570582240,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd2761ed0b7f4_27626242 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9d2eee37f0f4_86465681 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Banner -->
 					<section id="banner">
 						<div class="inner">
