@@ -38,6 +38,7 @@
 											<li><a href="{$PAG_CONTATO}">Contato</a></li>
 											<!--<li><a href="#">Sign Up</a></li>-->
 											<li><a href="{$GET_SITE_HOME}/admin/login.php">Log In</a></li>
+											<li><a href="{$GET_SITE_HOME}/admin/esqueci_senha.php">Esqueceu a senha?</a></li>
 										</ul>
 									</div>
 								</li>

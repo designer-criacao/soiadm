@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-03 22:10:04
+/* Smarty version 3.1.33, created on 2019-10-10 23:29:14
   from 'C:\xampp\htdocs\soiAdmin\admin\view\adm_index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d969becbf17b8_83650455',
+  'unifunc' => 'content_5d9fe8fa335160_83109893',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9637f0d4596e4f17a9bafe32b565a7c169b64cc9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\adm_index.tpl',
-      1 => 1570151403,
+      1 => 1570758844,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d969becbf17b8_83650455 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9fe8fa335160_83109893 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
 
@@ -147,14 +147,10 @@ function content_5d969becbf17b8_83650455 (Smarty_Internal_Template $_smarty_tpl)
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">Login Screens:</h6>
-            <a class="dropdown-item" href="login.html">Login</a>
-            <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_REGISTRAR_LOGIN']->value;?>
+                        <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_REGISTRAR_LOGIN']->value;?>
 ">Registrar</a>
-            <a class="dropdown-item" href="<?php echo $_smarty_tpl->tpl_vars['PAG_ESQUECI_SENHA']->value;?>
-">Esqueceu sua Senha</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Outras Páginas:</h6>
-          </div>
+                        <div class="dropdown-divider"></div>
+                      </div>
         </li>
       </ul>
 
@@ -188,7 +184,7 @@ function content_5d969becbf17b8_83650455 (Smarty_Internal_Template $_smarty_tpl)
     </div><!-- /.content-wrapper -->
 
   </div><!-- /#wrapper -->
-    
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>

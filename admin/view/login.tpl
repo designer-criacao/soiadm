@@ -43,11 +43,18 @@
         <label for="inputPassword" class="sr-only">Senha</label>
         <input type="password" name="txt_senha" id="inputPassword" class="form-control" placeholder="Senha" required>
         <button class="btn btn-lg btn-info btn-block" name="txt_logar" value="txt_logar">Acessar</button>
+        
+        
       </form>
-	  
+      
     </div> <!-- /container -->
-
-
+    {* <div class="container">
+      <br>
+        <a class="btn btn-lg btn-danger btn-block" name="esqueciSenha" href="{$PAG_ESQUECI_SENHA}">Esqueceu sua Senha</a>
+        <button type="submit" class="btn btn-lg btn-info btn-block" name="lembrar" value="txt_logar">
+          <a href="{$PAG_ESQUECI_SENHA}">Lembrar Senha</a>
+        </button>
+    </div> *}
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>

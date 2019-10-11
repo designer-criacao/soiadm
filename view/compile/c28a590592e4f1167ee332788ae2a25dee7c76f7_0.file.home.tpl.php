@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-08 21:50:54
+/* Smarty version 3.1.33, created on 2019-10-10 19:31:27
   from 'C:\xampp\htdocs\soiAdmin\view\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9d2eee37f0f4_86465681',
+  'unifunc' => 'content_5d9fb13fbb2e19_86812737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c28a590592e4f1167ee332788ae2a25dee7c76f7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\home.tpl',
-      1 => 1570582240,
+      1 => 1570746684,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9d2eee37f0f4_86465681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9fb13fbb2e19_86812737 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Banner -->
 					<section id="banner">
 						<div class="inner">
@@ -35,26 +35,10 @@ function content_5d9d2eee37f0f4_86465681 (Smarty_Internal_Template $_smarty_tpl)
 " class="button special">Solicite um Orçamento</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">Saiba Mais</a>
+						<a href="#two" class="more scrolly">Saiba Mais</a>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Por que contratar a Soi Design para fazer o seu site<br />
-								e demais serviços relacionados à Web?</h2>
-								<p>Porque a Soi Design apesar de nova no mercado tem o compromisso em atender sua necessidade com eficiência e o mais importante dentro do prazo estabelecido!</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-buysellads major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two -->
+					<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
@@ -66,10 +50,18 @@ function content_5d9d2eee37f0f4_86465681 (Smarty_Internal_Template $_smarty_tpl)
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/midias2.png" alt="" /></div><div class="content">
-								<h2>Marketing Digital<br />
-								Administração de redes sociais</h2>
-								<p>Hoje milhares de pessoas estão conectadas às redes sociais, antenadas a tudo que acontece, portanto sua empresa não pode ficar atrás, pois ali também estão a maioria de seus clientes. Pensando nisso a SOI Design, além de cuidar do seu site, também cria e cuida da página da sua empresa no Facebook e Instagram.</p>
+/images/aplicativo01.jpg" alt="" /></div><div class="content">
+								<h2>Desenvolvimento de Aplicativos Mobile<br /></h2>
+								<p>Hoje milhares de pessoas estão conectadas na internet através do celular, muitas usando aplicativos de bancos 
+								para pagar contas, fazer transferências, aplicativos de pedidos de comida, compras e roupas e muito mais.<br/>
+								Por isso, sua empresa não pode ficar de fora dessas tecnologias. A Soi Design está aqui para te ajudar a não ficar para 
+								trás. Desenvolvemos aplicativos mobile, para sua empresa poder atender melhor seus clientes e na facilidade de informações na 
+								palma de suas mãos.
+								
+								antenadas a tudo que acontece, 
+								portanto sua empresa não pode ficar atrás, pois ali também estão a maioria de seus clientes. 
+								Pensando nisso a SOI Design, além de cuidar do seu site, 
+								também cria e cuida da página da sua empresa no Facebook e Instagram.</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -81,6 +73,25 @@ function content_5d9d2eee37f0f4_86465681 (Smarty_Internal_Template $_smarty_tpl)
 							</div>
 						</section>
 					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Por que contratar a Soi Design para fazer o seu site<br />
+								e demais serviços relacionados à Web?</h2>
+								<p>Porque a Soi Design tem o compromisso em atender sua necessidade com eficiência e o 
+								mais importante dentro do prazo estabelecido!</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-buysellads major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				
 
 				<!-- Three -->
 					<!--<section id="three" class="wrapper style3 special">

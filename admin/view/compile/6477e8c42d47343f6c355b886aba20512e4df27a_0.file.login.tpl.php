@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-25 23:16:59
+/* Smarty version 3.1.33, created on 2019-10-10 23:49:09
   from 'C:\xampp\htdocs\soiAdmin\admin\view\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bd2791b027c84_83580469',
+  'unifunc' => 'content_5d9feda5819303_24418542',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6477e8c42d47343f6c355b886aba20512e4df27a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\login.tpl',
-      1 => 1538252699,
+      1 => 1570761991,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bd2791b027c84_83580469 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9feda5819303_24418542 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -74,12 +74,12 @@ function content_5bd2791b027c84_83580469 (Smarty_Internal_Template $_smarty_tpl)
         <label for="inputPassword" class="sr-only">Senha</label>
         <input type="password" name="txt_senha" id="inputPassword" class="form-control" placeholder="Senha" required>
         <button class="btn btn-lg btn-info btn-block" name="txt_logar" value="txt_logar">Acessar</button>
+        
+        
       </form>
-	  
+      
     </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <?php echo '<script'; ?>
  src="js/ie10-viewport-bug-workaround.js"><?php echo '</script'; ?>
 >

@@ -148,11 +148,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">Login Screens:</h6>
-            <a class="dropdown-item" href="login.html">Login</a>
+            {* <a class="dropdown-item" href="login.html">Login</a> *}
             <a class="dropdown-item" href="{$PAG_REGISTRAR_LOGIN}">Registrar</a>
-            <a class="dropdown-item" href="{$PAG_ESQUECI_SENHA}">Esqueceu sua Senha</a>
+            {* <a class="dropdown-item" href="{$PAG_ESQUECI_SENHA}">Esqueceu sua Senha</a> *}
             <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Outras Páginas:</h6>
+            {* <h6 class="dropdown-header">Outras Páginas:</h6> *}
           </div>
         </li>
       </ul>
@@ -185,7 +185,7 @@
     </div><!-- /.content-wrapper -->
 
   </div><!-- /#wrapper -->
-    
+
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>

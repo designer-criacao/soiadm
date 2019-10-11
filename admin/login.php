@@ -55,10 +55,13 @@ if(isset($_POST['txt_logar']) && isset($_POST['txt_user'])){
 		Rotas::Redirecionar(1, 'index.php');
 	}
 }
+else if(isset($_POST['lembrar'])){
+  Rotas::Redirecionar(0.5, Rotas::pag_EsqueciSenhaADM());
+}
 
 
+$smarty->assign('PAG_ESQUECI_SENHA', Rotas::pag_EsqueciSenhaADM());
 
 
 $smarty->display('login.tpl');
-
 ?>

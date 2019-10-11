@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-06 16:31:26
+/* Smarty version 3.1.33, created on 2019-10-10 23:54:36
   from 'C:\xampp\htdocs\soiAdmin\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ca8fe8ecd6fe9_45954523',
+  'unifunc' => 'content_5d9feeec45ea31_31517303',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff55da47e7a1a5a6f4da3441f3058cd20e07d499' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\view\\index.tpl',
-      1 => 1554576841,
+      1 => 1570762470,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ca8fe8ecd6fe9_45954523 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d9feeec45ea31_31517303 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML>
 <!--
 	Spectral by HTML5 UP
@@ -75,6 +75,8 @@ function content_5ca8fe8ecd6fe9_45954523 (Smarty_Internal_Template $_smarty_tpl)
 											<!--<li><a href="#">Sign Up</a></li>-->
 											<li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_HOME']->value;?>
 /admin/login.php">Log In</a></li>
+											<li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_HOME']->value;?>
+/admin/esqueci_senha.php">Esqueceu a senha?</a></li>
 										</ul>
 									</div>
 								</li>

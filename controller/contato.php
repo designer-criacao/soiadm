@@ -1,7 +1,7 @@
 <?php  
 
 $smarty = new Template();
-$contato = new Pedido();
+$contato = new Pedidos();
 
 if(isset($_POST['name']) && isset($_POST['email'])){
     $nome = $_POST['name'];
@@ -13,7 +13,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $decricao = $_POST['mensagem'];
     $data_pedido = Sistema::DataAtualUS(); //Sistema::Fdata($_POST['data_pedido']);
 
-    $gravar = new Pedido();
+    $gravar = new Pedidos();
     $gravar->Preparar($nome, $email, $razao, $telefone, $regiao, $servico, $decricao, $data_pedido);
     // $gravar->PedidoGravar($nome, $email, $razao, $telefone, $regiao, $servico, $data_pedido);
 

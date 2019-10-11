@@ -26,6 +26,7 @@
         exit('<h2>Erro! Acesso negado.</h2>');
     }
     
+    
     $smarty = new Template();
     /*$categorias = new Categorias();
     $categorias->GetCategorias();*/
@@ -71,5 +72,4 @@
     }
     
     $smarty->display('adm_index.tpl');
-
 ?>

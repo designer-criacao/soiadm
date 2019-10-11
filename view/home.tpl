@@ -10,26 +10,10 @@
 								<li><a href="{$PAG_CONTATO}" class="button special">Solicite um Orçamento</a></li>
 							</ul>
 						</div>
-						<a href="#one" class="more scrolly">Saiba Mais</a>
+						<a href="#two" class="more scrolly">Saiba Mais</a>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Por que contratar a Soi Design para fazer o seu site<br />
-								e demais serviços relacionados à Web?</h2>
-								<p>Porque a Soi Design apesar de nova no mercado tem o compromisso em atender sua necessidade com eficiência e o mais importante dentro do prazo estabelecido!</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-buysellads major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two -->
+					<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="{$GET_TEMA}/images/criacao_sites.jpg" alt="" /></div><div class="content">
@@ -39,10 +23,18 @@
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="{$GET_TEMA}/images/midias2.png" alt="" /></div><div class="content">
-								<h2>Marketing Digital<br />
-								Administração de redes sociais</h2>
-								<p>Hoje milhares de pessoas estão conectadas às redes sociais, antenadas a tudo que acontece, portanto sua empresa não pode ficar atrás, pois ali também estão a maioria de seus clientes. Pensando nisso a SOI Design, além de cuidar do seu site, também cria e cuida da página da sua empresa no Facebook e Instagram.</p>
+							<div class="image"><img src="{$GET_TEMA}/images/aplicativo01.jpg" alt="" /></div><div class="content">
+								<h2>Desenvolvimento de Aplicativos Mobile<br /></h2>
+								<p>Hoje milhares de pessoas estão conectadas na internet através do celular, muitas usando aplicativos de bancos 
+								para pagar contas, fazer transferências, aplicativos de pedidos de comida, compras e roupas e muito mais.<br/>
+								Por isso, sua empresa não pode ficar de fora dessas tecnologias. A Soi Design está aqui para te ajudar a não ficar para 
+								trás. Desenvolvemos aplicativos mobile, para sua empresa poder atender melhor seus clientes e na facilidade de informações na 
+								palma de suas mãos.
+								
+								antenadas a tudo que acontece, 
+								portanto sua empresa não pode ficar atrás, pois ali também estão a maioria de seus clientes. 
+								Pensando nisso a SOI Design, além de cuidar do seu site, 
+								também cria e cuida da página da sua empresa no Facebook e Instagram.</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -53,6 +45,25 @@
 							</div>
 						</section>
 					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Por que contratar a Soi Design para fazer o seu site<br />
+								e demais serviços relacionados à Web?</h2>
+								<p>Porque a Soi Design tem o compromisso em atender sua necessidade com eficiência e o 
+								mais importante dentro do prazo estabelecido!</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-buysellads major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				
 
 				<!-- Three -->
 					<!--<section id="three" class="wrapper style3 special">

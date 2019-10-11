@@ -17,15 +17,11 @@ class User extends Conexao{
      * @return boolean caso exista 
      */
     function GetUserEmail($email){
-        
-        $this->setEmail($email);
-        
+        //$this->setEmail($email);
         $query = " SELECT * FROM {$this->prefix}user WHERE user_email = :email ";
-        
-        $params = array(':email'=>  $this->getEmail());
-        
+        // $params = array(':email'=>  $this->getEmail());
+        $params = array(':email'=>  $email);
         $this->ExecuteSQL($query, $params);
-        
         return $this->TotalDados();
         
     }
@@ -58,16 +54,15 @@ class User extends Conexao{
     /**
      * alterar a senha  do USER
      */
-    function AlterarSenha($senha,$email){
-        
-        // setando email e senha
-        $this->setSenha($senha);
-        $this->setEmail($email);
+    function AlterarSenha($email,$senha){
         // montando a SQL
         $query = "UPDATE {$this->prefix}user SET user_pw = :senha";
         $query.= " WHERE user_email = :email";
+        // setando email e senha
+        $this->setEmail($email);
+        $this->setSenha($senha);
         // passando parametros
-        $params = array(':senha' => $this->getSenha(), ':email' => $this->getEmail());
+        $params = array(':email' => $this->getEmail(), ':senha' => $this->getSenha());
         // executando a SQL
         if ($this->ExecuteSQL($query, $params)):
 
@@ -75,6 +70,31 @@ class User extends Conexao{
         else:
             return FALSE;
         endif;
+    }
+
+    
+    function Preparar($user, $email, $senha){
+        $this->setUser($user);
+        $this->setEmail($email);
+        $this->setSenha($senha);
+    }
+
+    function Inserir(){
+        $query = "INSERT INTO {$this->prefix}user (user_nome,user_email,user_pw)";
+        $query .= " VALUES (:user,:email,:senha)";
+
+        $params = array(
+            ':user' => $this->getUser(),
+            ':email' => $this->getEmail(),
+            ':senha' => $this->getSenha()
+        );
+        if($this->ExecuteSQL($query, $params)):
+            return TRUE;
+        else:
+            return FALSE;
+        endif;
+
+
     }
 
 

@@ -36,6 +36,7 @@ $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 $smarty->assign('PAG_EMPRESA', Rotas::pag_Empresa());
 $smarty->assign('PAG_PORTFOLIO', Rotas::pag_Portfolio());
 $smarty->assign('TELA_LOGIN', Rotas::pag_LoginADM());
+$smarty->assign('PAG_ESQUECI_SENHA', Rotas::pag_EsqueciSenhaADM());
 
 /*$smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
 $smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
