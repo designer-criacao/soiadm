@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-03 21:35:22
+/* Smarty version 3.1.33, created on 2019-10-12 13:04:20
   from 'C:\xampp\htdocs\soiAdmin\admin\view\cad_clientes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bde3eca834c75_76098816',
+  'unifunc' => 'content_5da1f984794347_40486054',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f3a4efb20b7bee0045eefc9c24c95b8dbe849b85' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\cad_clientes.tpl',
-      1 => 1541291707,
+      1 => 1570758045,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bde3eca834c75_76098816 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5da1f984794347_40486054 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--- dados do cadastro -->
 <h3>Cadastro de cliente</h3>

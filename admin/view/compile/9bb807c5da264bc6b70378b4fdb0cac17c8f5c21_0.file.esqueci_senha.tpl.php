@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-10-10 23:44:05
+/* Smarty version 3.1.33, created on 2019-10-12 17:08:07
   from 'C:\xampp\htdocs\soiAdmin\admin\view\esqueci_senha.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d9fec7595cfb3_02926063',
+  'unifunc' => 'content_5da1ec5764d649_63720039',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9bb807c5da264bc6b70378b4fdb0cac17c8f5c21' => 
     array (
       0 => 'C:\\xampp\\htdocs\\soiAdmin\\admin\\view\\esqueci_senha.tpl',
-      1 => 1570761835,
+      1 => 1570892875,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d9fec7595cfb3_02926063 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5da1ec5764d649_63720039 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -68,12 +68,12 @@ function content_5d9fec7595cfb3_02926063 (Smarty_Internal_Template $_smarty_tpl)
     <div class="container">
 
       <form class="form-signin" method="POST" action="" enctype="multipart/form-data">
-        <h2 class="form-signin-heading">Área Restrita</h2>
+        <h2 class="form-signin-heading">Recuperação de Senha</h2>
         <label for="inputEmail" name="inputEmail" class="sr-only">Email</label>
-        <input type="text" name="txt_user" id="inputUser" class="form-control" placeholder="Usuário" required autofocus>
-        
+        <input type="email" name="txt_user" id="inputUser" class="form-control" placeholder="E-mail" required autofocus>
+        <br>
         <button class="btn btn-lg btn-info btn-block" name="enviar" value="txt_logar">
-          <i class="fa fa-check"></i>Acessar
+          <i class="fa fa-check"></i>Recuperar
         </button>
         
         

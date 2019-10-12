@@ -37,12 +37,12 @@
     <div class="container">
 
       <form class="form-signin" method="POST" action="" enctype="multipart/form-data">
-        <h2 class="form-signin-heading">Área Restrita</h2>
+        <h2 class="form-signin-heading">Recuperação de Senha</h2>
         <label for="inputEmail" name="inputEmail" class="sr-only">Email</label>
-        <input type="text" name="txt_user" id="inputUser" class="form-control" placeholder="Usuário" required autofocus>
-        
+        <input type="email" name="txt_user" id="inputUser" class="form-control" placeholder="E-mail" required autofocus>
+        <br>
         <button class="btn btn-lg btn-info btn-block" name="enviar" value="txt_logar">
-          <i class="fa fa-check"></i>Acessar
+          <i class="fa fa-check"></i>Recuperar
         </button>
         
         

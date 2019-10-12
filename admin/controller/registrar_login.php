@@ -14,13 +14,20 @@ if(isset($_POST['registrar']) && isset($_POST['inputEmail'])){
     }
     else{
         $user->Preparar($userNome, $useEmail, $userPw);
+        if($user->GetUserEmail($useEmail) > 0){
+            echo '<div class="alert alert-success">Email já existente! Favor colocar outro e-mail.';
+            Rotas::Redirecionar(5, Rotas::pag_RegistrarLoginADM());
+            echo '</div>';
+            exit();
+        }
 
         if(!$user->Inserir()){
             echo '<div class="alert alert-success">Não Cadastrado!';
             Rotas::Redirecionar(5, Rotas::pag_RegistrarLoginADM());
             echo '</div>';
             exit();
-        }else{
+        }
+        else{
             echo '<div class="alert alert-success">Sucesso no Cadastro!</div>';
             Rotas::Redirecionar(1, Rotas::pag_UsuariosADM());
         }
