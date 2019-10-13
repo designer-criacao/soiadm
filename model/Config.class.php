@@ -20,7 +20,7 @@
 		const EMAIL_HOST = "smtp-mail.outlook.com";
 		const EMAIL_USER = "info@soidesign.com.br";
 		const EMAIL_NOME = "Contato Loja Soi Design";
-		const EMAIL_SENHA = "gostosao1984";
+		const EMAIL_SENHA = "gostosao1808";
 		//const EMAIL_SENHA = "soidesign";
 		const EMAIL_PORTA = 587;
 		const EMAIL_SMTPAUTH = true;
